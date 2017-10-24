@@ -9,6 +9,10 @@ module Enotas
       request(:post, path, body)
     end
 
+    def delete(path, body = {})
+      request(:delete, path, body)
+    end
+
     private
 
     def request(method, path, body)
