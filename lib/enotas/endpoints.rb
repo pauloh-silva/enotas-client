@@ -18,11 +18,11 @@ module Enotas
     end
 
     def nfe_get_by_external_id(firm_id, external_id)
-      get("empresas/#{firm_id}/nfes/#{external_id}")
+      get("empresas/#{firm_id}/nfes/porIdExterno/#{external_id}")
     end
 
     def nfe_delete_by_external_id(firm_id, external_id)
-      delete("empresas/#{firm_id}/nfes/#{external_id}")
+      delete("empresas/#{firm_id}/nfes/porIdExterno/#{external_id}")
     end
 
     def nfe_get_pdf(firm_id, id)
@@ -30,7 +30,7 @@ module Enotas
     end
 
     def nfe_get_pdf_by_external_id(firm_id, external_id)
-      get("empresas/#{firm_id}/nfes/#{external_id}/pdf")
+      get("empresas/#{firm_id}/nfes/porIdExterno/#{external_id}/pdf")
     end
 
     def nfe_get_xml(firm_id, id)
@@ -38,7 +38,7 @@ module Enotas
     end
 
     def nfe_get_xml_by_external_id(firm_id, external_id)
-      get("empresas/#{firm_id}/nfes/#{external_id}/xml")
+      get("empresas/#{firm_id}/nfes/porIdExterno/#{external_id}/xml")
     end
 
   end
